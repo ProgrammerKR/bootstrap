@@ -3,13 +3,13 @@
 // ++++++++++++++++++++++++++++++++++++++++++
 
 /*
- * JavaScript for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2025 The Bootstrap Authors
+ * JavaScript for ProXtyle's docs (https://proxtyle.com/)
+ * Copyright 2011-2025 The ProXtyle Authors
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  * For details, see https://creativecommons.org/licenses/by/3.0/.
  */
 
-/* global bootstrap: false */
+/* global proXtyle: false */
 
 import ClipboardJS from 'clipboard'
 
@@ -45,7 +45,7 @@ export default () => {
    */
   function snippetButtonTooltip(selector, title) {
     document.querySelectorAll(selector).forEach(btn => {
-      bootstrap.Tooltip.getOrCreateInstance(btn, { title })
+      proXtyle.Tooltip.getOrCreateInstance(btn, { title })
     })
   }
 
@@ -59,7 +59,7 @@ export default () => {
 
   clipboard.on('success', event => {
     const iconFirstChild = event.trigger.querySelector('.bi').firstElementChild
-    const tooltipBtn = bootstrap.Tooltip.getInstance(event.trigger)
+    const tooltipBtn = proXtyle.Tooltip.getInstance(event.trigger)
     const namespace = 'http://www.w3.org/1999/xlink'
     const originalXhref = iconFirstChild.getAttributeNS(namespace, 'href')
     const originalTitle = event.trigger.title
@@ -85,11 +85,11 @@ export default () => {
   clipboard.on('error', event => {
     const modifierKey = /mac/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl-'
     const fallbackMsg = `Press ${modifierKey}C to copy`
-    const tooltipBtn = bootstrap.Tooltip.getInstance(event.trigger)
+    const tooltipBtn = proXtyle.Tooltip.getInstance(event.trigger)
 
     tooltipBtn.setContent({ '.tooltip-inner': fallbackMsg })
     event.trigger.addEventListener('hidden.bs.tooltip', () => {
       tooltipBtn.setContent({ '.tooltip-inner': btnTitle })
     }, { once: true })
   })
-}
+    }
