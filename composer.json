@@ -1,32 +1,28 @@
 {
-  "name": "twbs/bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "name": "ProgrammerKR/ProXtyle",
+  "description": "A high-performance CSS framework for modern web designs, responsive and customizable.",
   "keywords": [
     "css",
-    "js",
-    "sass",
-    "mobile-first",
     "responsive",
+    "mobile-first",
     "front-end",
     "framework",
-    "web"
+    "web",
+    "design",
+    "customizable"
   ],
-  "homepage": "https://getbootstrap.com/",
+  "homepage": "https://proxstyle.com/",
   "authors": [
     {
-      "name": "Mark Otto",
-      "email": "markdotto@gmail.com"
-    },
-    {
-      "name": "Jacob Thornton",
-      "email": "jacobthornton@gmail.com"
+      "name": "ProgrammerKR",
+      "email": "programmerkr.123@gmail.com"
     }
   ],
   "support": {
-    "issues": "https://github.com/twbs/bootstrap/issues"
+    "issues": "https://github.com/ProgrammerKR/ProXtyle/issues"
   },
   "license": "MIT",
   "replace": {
-    "twitter/bootstrap": "self.version"
+    "proxstyle": "self.version"
   }
 }
