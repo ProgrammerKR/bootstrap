@@ -2,6 +2,6 @@
 **/dist/
 **/vendor/
 /_site/
-/js/coverage/
+/js/coverage /
 /site/static/sw.js
-/site/layouts/partials/
+/site/layouts/partials/ 
