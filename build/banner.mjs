@@ -11,9 +11,9 @@ const year = new Date().getFullYear()
 
 function getBanner(pluginFilename) {
   return `/*!
-  * Bootstrap${pluginFilename ? ` ${pluginFilename}` : ''} v${pkg.version} (${pkg.homepage})
+  * ProXtyle${pluginFilename ? ` ${pluginFilename}` : ''} v${pkg.version} (${pkg.homepage})
   * Copyright 2011-${year} ${pkg.author}
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * Licensed under MIT (https://github.com/ProgrammerKR/ProXtyle/blob/main/LICENSE)
   */`
 }
 
