@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "stylelint-config-twbs-bootstrap"
-  ],
   "reportInvalidScopeDisables": true,
   "reportNeedlessDisables": true,
   "overrides": [
@@ -19,10 +16,6 @@
         ],
         "property-disallowed-list": [
           "border-radius",
-          "border-top-left-radius",
-          "border-top-right-radius",
-          "border-bottom-right-radius",
-          "border-bottom-left-radius",
           "transition"
         ],
         "scss/dollar-variable-default": [
@@ -56,5 +49,6 @@
         "value-no-vendor-prefix": null
       }
     }
-  ]
+  ],
+  "note": "Custom Stylelint config for ProXtyle v1.0.0. Some rules inspired by Bootstrap, but this config does not extend Bootstrap directly."
 }
