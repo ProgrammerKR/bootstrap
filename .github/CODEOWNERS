@@ -1,3 +1,3 @@
-*.js    @twbs/js-review
-*.css   @twbs/css-review
-*.scss  @twbs/css-review
+*.js    @ProgrammerKR/js-review
+*.css   @ProgrammerKR/css-review
+*.scss  @ProgrammerKR/css-review
