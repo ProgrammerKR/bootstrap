@@ -11,7 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const BUNDLE = process.env.BUNDLE === 'true'
 const ESM = process.env.ESM === 'true'
 
-let destinationFile = `bootstrap${ESM ? '.esm' : ''}`
+let destinationFile = `ProXtyle${ESM ? '.esm' : ''}`
 const external = ['@popperjs/core']
 const plugins = [
   babel({
@@ -53,7 +53,7 @@ const rollupConfig = {
 }
 
 if (!ESM) {
-  rollupConfig.output.name = 'bootstrap'
+  rollupConfig.output.name = 'ProXtyle'
 }
 
 export default rollupConfig
