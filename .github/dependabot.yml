@@ -7,6 +7,8 @@ updates:
       day: tuesday
       time: "12:00"
       timezone: Europe/Athens
+    # Updates for GitHub Actions workflows
+
   - package-ecosystem: npm
     directory: "/"
     reviewers:
@@ -26,3 +28,4 @@ updates:
         dependency-type: "production"
       development-dependencies:
         dependency-type: "development"
+    # Production and development dependencies for ProXtyle
